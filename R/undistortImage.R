@@ -19,7 +19,7 @@ function(imageMatrix, undistortArray = processing$undistortArray, bits = detecto
     
     # Any final pixels overlapping an overload on original image are given the overload value.
     # This may lead to pixel values greater than the overload value after the loop through all
-    # pixels is complete but these will be capped inside the function read().
+    # pixels is complete but these will be capped inside the function correct().
     if (imageMatrix[i,j] >= 2^bits){  
       temp[temp > 0] <- 2^bits
     }

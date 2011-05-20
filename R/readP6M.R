@@ -5,6 +5,7 @@ function(filename){
   ## This is not a universal mini-CBF file reader! It assumes the image has the byte-offset compression scheme
   ## described in http://www.bernstein-plus-sons.com/software/CBF/doc/cbf_definition_rev.html
   
+  byteLen <- file.info(filename)$size
   f <- file(filename, open="rb")
   
   # check the magic number
@@ -23,7 +24,7 @@ function(filename){
     strlength <- strlength + 1
     test <- headertext[max(1 ,strlength - 2):strlength]
     if(identical(test, START_OF_BIN)) endofheader <- TRUE
-  if(strlength > 1500) endofheader <- TRUE
+  if(seek(f) >= byteLen) stop("readP6M: reached end of file without finding a binary section")
   }
   headertext <- paste(headertext, collapse="")
   headertext <- strsplit(headertext, split="[\r\n]+")[[1]]
