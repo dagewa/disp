@@ -53,14 +53,14 @@ Returns NULL. Used for the side-effect of saving files to disk.
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-	## Not run.
-	## WARNING: This function may take a long time to compute.
-	## and requires the list called detector to be set up.
-	\dontrun{
-		data(detector)
-		data(processing)
-		makePolyGrids()
-	}
+## Not run.
+## WARNING: This function may take a long time to compute.
+## and requires the list called detector to be set up.
+\dontrun{
+data(detector)
+data(processing)
+makePolyGrids()
+}
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

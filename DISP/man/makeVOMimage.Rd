@@ -49,24 +49,24 @@ A matrix of values corresponding to the variance over mean ratio or dispersion i
 	\code{\link{pxVar}},
 }
 \examples{
-	## Not run.
-	## WARNING: This may take a long time to compute, and requires the lists called detector and processing to be set up.
-	\dontrun{
-		data(detector)
-		data(processing)
-		corrIm01 <- correct(read(expose(spot())))
-		corrIm02 <- correct(read(expose(spot())))
-		corrIm03 <- correct(read(expose(spot())))
-		corrIm04 <- correct(read(expose(spot())))
-		corrIm05 <- correct(read(expose(spot())))
-		corrIm06 <- correct(read(expose(spot())))
-		corrIm07 <- correct(read(expose(spot())))
-		corrIm08 <- correct(read(expose(spot())))
-		corrIm09 <- correct(read(expose(spot())))
-		corrIm10 <- correct(read(expose(spot())))
-		ROIset <- makeImageSet("corrIm##", c(502,522), c(502,522))
-		VOM <- makeVOMimage(ROIset)
-	}
+## Not run.
+## WARNING: This may take a long time to compute, and requires the lists called detector and processing to be set up.
+\dontrun{
+data(detector)
+data(processing)
+corrIm01 <- correct(read(expose(spot())))
+corrIm02 <- correct(read(expose(spot())))
+corrIm03 <- correct(read(expose(spot())))
+corrIm04 <- correct(read(expose(spot())))
+corrIm05 <- correct(read(expose(spot())))
+corrIm06 <- correct(read(expose(spot())))
+corrIm07 <- correct(read(expose(spot())))
+corrIm08 <- correct(read(expose(spot())))
+corrIm09 <- correct(read(expose(spot())))
+corrIm10 <- correct(read(expose(spot())))
+ROIset <- makeImageSet("corrIm##", c(502,522), c(502,522))
+VOM <- makeVOMimage(ROIset)
+}
 }
 
 \keyword{ manip }

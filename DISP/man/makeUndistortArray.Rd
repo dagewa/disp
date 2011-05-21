@@ -53,8 +53,8 @@ makeUndistortArray()
 ## Not run.
 ## WARNING: This may take a long time to compute, and requires the list called detector to be set up.
 \dontrun{
-	x <- makeUndistortArray()
-	}
+x <- makeUndistortArray()
+}
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

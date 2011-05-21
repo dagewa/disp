@@ -53,7 +53,7 @@ makeNormaliseArray()
 }
 \examples{
 ## WARNING: This may take a long time to compute, and requires the list called detector to be set up.
-	\dontrun{x <- makeNormaliseArray()}
+\dontrun{x <- makeNormaliseArray()}
 }
 
 \keyword{utilities}

@@ -61,15 +61,15 @@ makeImageSet(string, xRange = NULL, yRange = NULL, type = "ASCII")
 	\code{\link{pxCor}} which expect an \code{imageSet} as an argument.
 }
 \examples{
-	## Not run.
-	## WARNING: This may take a long time to compute.
-	\dontrun{
-		data(detector)
-		rawIm01 <- read(expose(spot()))
-		rawIm02 <- read(expose(spot()))
-		rawIm03 <- read(expose(spot()))
-		ROIset <- makeImageSet("rawIm##", c(501,520), c(501,520))
-	}
+## Not run.
+## WARNING: This may take a long time to compute.
+\dontrun{
+data(detector)
+rawIm01 <- read(expose(spot()))
+rawIm02 <- read(expose(spot()))
+rawIm03 <- read(expose(spot()))
+ROIset <- makeImageSet("rawIm##", c(501,520), c(501,520))
+}
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

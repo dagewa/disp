@@ -70,17 +70,17 @@ spot at different positions.
 	\code{\link{pxIntegrate}}
 }
 \examples{
-	## Not run.
-	## WARNING: This may take a long time to compute, and requires the lists called detector and processing to be set up.
-	\dontrun{
-		data(detector)
-		data(processing)
-		corrIm01 <- correct(read(expose(spot())))
-		corrIm02 <- correct(read(expose(spot())))
-		corrIm03 <- correct(read(expose(spot())))
-		ROIset <- makeImageSet("corrIm##", c(502,522), c(502,522))
-		prof <- makeProfile(ROIset, NX=21, NY=21, NRX=2, NRY=3, NC=7)
-	}
+## Not run.
+## WARNING: This may take a long time to compute, and requires the lists called detector and processing to be set up.
+\dontrun{
+data(detector)
+data(processing)
+corrIm01 <- correct(read(expose(spot())))
+corrIm02 <- correct(read(expose(spot())))
+corrIm03 <- correct(read(expose(spot())))
+ROIset <- makeImageSet("corrIm##", c(502,522), c(502,522))
+prof <- makeProfile(ROIset, NX=21, NY=21, NRX=2, NRY=3, NC=7)
+}
 }
 
 \keyword{utilities}

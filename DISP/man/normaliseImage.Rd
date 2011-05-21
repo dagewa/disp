@@ -18,8 +18,7 @@ normaliseImage(imageMatrix, dark = processing$darkRaw, normaliser = processing$f
   \item{dark}{
 	A matrix continaing raw dark image pixel values.
 }
-  \item{normaliser}{
-The \sQuote{flatfield} matrix of normalisation factors to effect non-uniformity correction.
+  \item{normaliser}{The \sQuote{flatfield} matrix of normalisation factors to effect non-uniformity correction.
 }
 }
 \details{
@@ -53,14 +52,14 @@ A matrix of pixel values that have been dark-subtracted and normalised for non-u
 	\code{\link{processing}}.
 }
 \examples{
-	## Not run.
-	## WARNING: This may take a long time to compute, and requires the lists called detector and processing to be set up.
-	\dontrun{
-		data(detector)
-		data(processing)
-		rawIm <- read(expose(spot()))
-		normRawIm <- normaliseImage(rawIm)
-	}
+## Not run.
+## WARNING: This may take a long time to compute, and requires the lists called detector and processing to be set up.
+\dontrun{
+data(detector)
+data(processing)
+rawIm <- read(expose(spot()))
+normRawIm <- normaliseImage(rawIm)
+}
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

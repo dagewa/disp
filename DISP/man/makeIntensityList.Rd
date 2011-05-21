@@ -52,13 +52,13 @@ of that usage.
 	\code{\link{exposeSpots}}.
 }
 \examples{
-	## Not run.
-	## WARNING: This function requires a data frame formed from reading a batch MTZ file into the environment, which
-	## is not supplied with this package.
-	\dontrun{
-		someMTZobject <- readMTZ("./someMTZfile.mtz")
-		x <- makeIntensityList(someMTZobject)
-	}
+## Not run.
+## WARNING: This function requires a data frame formed from reading a batch MTZ file into the environment, which
+## is not supplied with this package.
+\dontrun{
+someMTZobject <- readMTZ("./someMTZfile.mtz")
+x <- makeIntensityList(someMTZobject)
+}
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

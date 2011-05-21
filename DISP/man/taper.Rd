@@ -2,10 +2,12 @@
 \alias{taper}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
+Minify a quantum image by transformation via the Fibre Optic Taper (FOT)
 }
 \description{
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Given a quantum image, consisting of X, Y coordinates of photons, produces the equivalent positions
+at the small end of the simulated FOT, which shrinks the image and introduces spatial
+distortion.
 }
 \usage{
 taper(input, taperBleed = detector$taperBleed)
@@ -13,27 +15,31 @@ taper(input, taperBleed = detector$taperBleed)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{input}{
-%%     ~~Describe \code{input} here~~
+	A two-column matrix giving the x and y positions in mm of light photons incident
+	on the large face of the FOT.
 }
   \item{taperBleed}{
-%%     ~~Describe \code{taperBleed} here~~
+	A parameter describing the FOT contribution to the PSF.
 }
 }
 \details{
-%%  ~~ If necessary, more details than the description above ~~
+The taper parameters that control both the strength of minification as well as the spatial distortion are
+stored for the simulated hardware in the list called \code{detector}.
+
+The \code{taperBleed} parameter is used as the standard deviation of a Gaussian random deviate, which determines
+the radius of \sQuote{jitter} introduced to the photon positions. The PSF broadening in the taper this causes is not
+directly modelled on real observations, but the overall effect is to modify the PSF such that it better matches
+observed values for the complete detector system.
 }
 \value{
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
+	A two-column matrix giving the x and y positions in mm of light photons at the positions they exit the small
+	face of the FOT.
 }
 \references{
-%% ~put references to the literature/web site here ~
+	\url{http://dx.doi.org/10.1107/S0021889810033418}
 }
 \author{
-%%  ~~who you are~~
+	David G. Waterman.
 }
 \note{
 %%  ~~further notes~~
@@ -45,33 +51,7 @@ taper(input, taperBleed = detector$taperBleed)
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
-## The function is currently defined as
-function (input, taperBleed = detector$taperBleed) 
-{
-    if (is.null(input)) 
-        return(NULL)
-    cols <- ncol(input)
-    if (is.null(cols) || cols != 2) 
-        stop("taper: the supplied input does not have 2 columns (for x and y Xph coordinates)")
-    input <- subset(input, input[, 1] > detector$xDetRange[1] & 
-        input[, 1] < detector$xDetRange[2] & input[, 2] > detector$yDetRange[1] & 
-        input[, 2] < detector$yDetRange[2])
-    rows <- nrow(input)
-    dr <- rnorm(n = rows, mean = 0, sd = taperBleed)
-    theta <- runif(n = rows, min = 0, max = 2 * pi)
-    dx <- dr * cos(theta)
-    dy <- dr * sin(theta)
-    input[, 1] <- input[, 1] + dx
-    input[, 2] <- input[, 2] + dy
-    output <- .distortPoints(input)
-    return(output)
-  }
+x <- taper(phosphor(spot(10)))
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
+
+\keyword{datagen}

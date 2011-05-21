@@ -110,7 +110,7 @@ values and a \code{VOMimage} (\code{type = "corArray"}).
 A vector of five elements, the last three of which might be \code{NA} depending on options:
 	\item{1}{Summation integration intensity}
 	\item{2}{Summation integration intensity variance estimate (as Mosflm)}
-	\item{3}{Summation integration intensity variance estimate (using the \quote{cascade model} for the current detector parameters)}
+	\item{3}{Summation integration intensity variance estimate (using the \dQuote{cascade model} for the current detector parameters)}
 	\item{4}{Profile fitting intensity}
 	\item{5}{Profile fitting intensity variance estimate (from \code{Mobs})}
 }

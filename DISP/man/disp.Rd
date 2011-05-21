@@ -85,12 +85,12 @@ disp(imageMatrix, white = NULL, black = NULL, units = "pixels", origin = c(1,1),
 ## Not run.
 ## WARNING: This may take a long time to compute, and requires the lists called detector and processing to be set up.
 \dontrun{
-	data(detector)
-	data(processing)
-	rawIm <- read(expose(spot()))
-	corrIm <- correct(rawIm)
-	disp(corrIm[501:520,501:520], origin=c(501,501), units="mm")
-	}
+data(detector)
+data(processing)
+rawIm <- read(expose(spot()))
+corrIm <- correct(rawIm)
+disp(corrIm[501:520,501:520], origin=c(501,501), units="mm")
+}
 }	
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

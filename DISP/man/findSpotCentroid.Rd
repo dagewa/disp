@@ -2,7 +2,7 @@
 \alias{findSpotCentroid}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-	Finds the centre of gravity within a measurement box
+	Find the centre of gravity within a measurement box
 }
 \description{
 	Given an image matrix and measurement box parameters, this function calculates the centre of
@@ -66,15 +66,15 @@
 	\code{\link{findSpot}}.
 }
 \examples{
-	## Not run.
-	## WARNING: This may take a long time to compute, and requires the lists called detector and processing to be set up.
-	\dontrun{
-		data(detector)
-		data(processing)
-		rawIm <- read(expose(spot()))
-		corrIm <- correct(rawIm)
-		findSpotCentroid(corrIm, NX=19, NY=21, NRX=3, NRY=4, NC=9, xPx=513, yPx=513)
-	}
+## Not run.
+## WARNING: This may take a long time to compute, and requires the lists called detector and processing to be set up.
+\dontrun{
+data(detector)
+data(processing)
+rawIm <- read(expose(spot()))
+corrIm <- correct(rawIm)
+findSpotCentroid(corrIm, NX=19, NY=21, NRX=3, NRY=4, NC=9, xPx=513, yPx=513)
+}
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

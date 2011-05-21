@@ -61,11 +61,11 @@ returns NULL or invisibly returns the full width at each fraction x of the maxim
 ## Not run.
 ## WARNING: This may take a long time to compute, and requires the lists called detector and processing to be set up.
 \dontrun{
-	data(detector)
-	data(processing)
-	rawIm <- read(expose(spot()))
-	corrIm <- correct(rawIm)
-	linePlot(corrIm, px1 = c(504,504), px2 = c(520,520), fwxm = c(0.5,0.1), col="blue")
+data(detector)
+data(processing)
+rawIm <- read(expose(spot()))
+corrIm <- correct(rawIm)
+linePlot(corrIm, px1 = c(504,504), px2 = c(520,520), fwxm = c(0.5,0.1), col="blue")
 }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

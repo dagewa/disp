@@ -46,9 +46,9 @@ dispContour(imageMatrix, origin = c(1,1))
 	\code{\link{dispBox}}.
 }
 \examples{
-	data(detector)
-	rawIm <- read(expose(spot()))
-	dispContour(rawIm[491:530,491:530], origin=c(491,491))
+data(detector)
+rawIm <- read(expose(spot()))
+dispContour(rawIm[491:530,491:530], origin=c(491,491))
 }
 
 \keyword{ hplot }

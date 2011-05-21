@@ -2,7 +2,7 @@
 \alias{flatten}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-	Create full variance-covariance matrix from data that stores only local covariance.
+Create full variance-covariance matrix from data that stores only local covariance
 }
 \description{
 	The full variance-covariance matrix for pixels in an image is calculated from the pixel values and
@@ -68,12 +68,12 @@ flatten(imageSlice, VOMimage, corArray)
 	\code{\link{makeVOMimage}}.
 }
 \examples{
-	#load some data files created during spot simulations for the study
-	#reported in http://dx.doi.org/10.1107/S0021889810033418
-	data(spotSimulations)
-	
-	dummy <- matrix(data = 1, ncol = 21, nrow = 21)
-	MobsRaw <- flatten(dummy, dummy, varcovZoneBRaw)
+#load some data files created during spot simulations for the study
+#reported in http://dx.doi.org/10.1107/S0021889810033418
+data(spotSimulations)
+
+dummy <- matrix(data = 1, ncol = 21, nrow = 21)
+MobsRaw <- flatten(dummy, dummy, varcovZoneBRaw)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

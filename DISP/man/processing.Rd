@@ -5,9 +5,9 @@
 	Parameters describing image corrections
 }
 \description{
-	This list is used to describe the simulated detector module image corrections and processing
-	for producing non-uniformity and distortion corrected images from raw images returned by \code{read}
-	for the standard simulated detector of \dQuote{Rayonix MX type, 2*2 binning, 1024*1024 px} type.
+	This list is used to describe the simulated detector module image corrections and processing.
+	These are used to produce non-uniformity and distortion corrected images from raw images returned by \code{read}.
+	The values provided are for the standard simulated detector of \dQuote{Rayonix MX type, 2*2 binning, 1024*1024 px} type.
 }
 \usage{data(processing)}
 \format{
@@ -38,6 +38,6 @@
 	\code{\link{makeProcessingList}}.
 }
 \examples{
-	data(processing)
+data(processing)
 }
 \keyword{datasets}

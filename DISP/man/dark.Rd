@@ -2,7 +2,7 @@
 \alias{dark}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-	Create thermal electron image.
+Create thermal electron image
 }
 \description{
 	Given an accumulation time and a dark rate, creates a matrix
@@ -48,8 +48,8 @@
 	\code{\link{detector}}.
 }
 \examples{
-	data(detector)
-	x <- dark()
+data(detector)
+x <- dark()
 }
 
 \keyword{datagen}

@@ -2,7 +2,7 @@
 \alias{exposeSpots}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-	Exposes the detector with simulated diffraction spots
+	Expose the detector with simulated diffraction spots
 }
 \description{
 	Takes a list of incident spot positions and intensities, and exposes the detector with generated spots.
@@ -45,8 +45,19 @@ exposeSpots(intensityList, ...)
 	
 }
 \examples{
-	iList <- cbind(c(1000, 5000, 2000), c(10, 30, 50), c(25, 40, 25))
-	spotsRaw <- read(exposeSpots(iList))
+# this example produces a logo image for the package
+data(detector)
+data(processing)
+
+x <- c(1, 1, 1, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 5, 7, 7, 7, 7, 7, 9, 9, 10,
+   10, 10, 11, 11, 11, 12, 12, 12, 13, 13, 15, 15, 15, 15, 15, 16, 16, 17,
+   17, 18, 18, 19)*0.5 + 1
+y <- c(1, 2, 3, 4, 5, 1, 5, 1, 5, 1, 5, 2, 3, 4, 1, 2, 3, 4, 5, 1, 4, 1,
+   3, 5, 1, 3, 5, 1, 3, 5, 2, 5, 1, 2, 3, 4, 5, 3, 5, 3, 5, 3, 5, 4)*0.5 + 1
+
+iList <- cbind(rpois(44, 750), x, y)
+im <- correct(read(exposeSpots(iList)))
+logo <- im[1:161,1:70]
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

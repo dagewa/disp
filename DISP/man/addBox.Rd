@@ -2,7 +2,7 @@
 \alias{addBox}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Add a measurement box to the current plot. 
+Add a measurement box to the current plot
 }
 \description{
 	Given the parameters describing a measurement box, draws the box on the current plot
@@ -61,10 +61,12 @@ addBox(NX, NY, NRX, NRY, NC, xPx = ceiling(NX/2), yPx = ceiling(NY/2))
 	\code{\link{dispContour}}.
 }
 \examples{
-	data(detector)
-	rawIm <- read(expose(spot()))
-	disp(rawIm[491:530,491:530], origin=c(491,491))
-	addBox(NX=19, NY=19, NRX=5, NRY=5, NC=11, xPx=513, yPx=513)
+data(detector)
+data(processing)
+rawIm <- read(expose(spot(lambda=750, x=25, y=25)))
+corIm <- correct(rawIm)
+disp(corIm[327:357,327:357],origin=c(327,327))
+addBox(NX=17, NY=17, NRX=5, NRY=3, NC=10, xPx=342, yPx=342)
 }
 
 \keyword{aplot}

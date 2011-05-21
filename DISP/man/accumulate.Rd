@@ -42,10 +42,10 @@ to the CCD chip by \code{taper}.
 	\code{\link{expose}}.
 }
 \examples{
-	data(detector)
-	x_pos <- spot()
-	light_pos <- taper(phosphor(x_pos))
-	e_image <- accumulate(light_pos)
+data(detector)
+x_pos <- spot()
+light_pos <- taper(phosphor(x_pos))
+e_image <- accumulate(light_pos)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

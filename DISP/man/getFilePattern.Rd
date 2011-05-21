@@ -55,7 +55,7 @@ getFilePattern(string)
 	\code{\link{rmImageBatch}}.
 }
 \examples{
-	getFilePattern("./path/to/imageFile_1_###.img")
+getFilePattern("./path/to/imageFile_1_###.img")
 }
 
 \keyword{file}

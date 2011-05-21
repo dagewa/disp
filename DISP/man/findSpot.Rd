@@ -38,7 +38,7 @@
 \details{
 	Used to locate a spot positions and fit a measurement box to it, using an algorithm based on MOSFLM's, which
 	optimises measurement box parameters to maximise I/sig(I) of the summation integrated spot, as described by
-	Lehman and Larsen \url{http://dx.doi.org/10.1107/S0567739474001379}. Experience shows that the implementation of
+	Lehman and Larsen (see \url{http://dx.doi.org/10.1107/S0567739474001379}). Experience shows that the implementation of
 	this algorithm may be overly conservative in determining the size of the peak region. Manually increasing the
 	peak region size prior to integration might result in a more accurate determination of the integrated intensity..
 	

@@ -45,10 +45,10 @@ rotate(imageMatrix)
 	\code{\link{disp}}.
 }
 \examples{
-	x <- cbind(1:10,10:1)
-	rotate(x)
-	flipVertical(x)
-	flipHorizontal(x)
+x <- cbind(1:10,10:1)
+rotate(x)
+flipVertical(x)
+flipHorizontal(x)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

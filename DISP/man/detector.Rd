@@ -60,6 +60,6 @@
 	\code{\link{processing}}.
 }
 \examples{
-	data(detector)
+data(detector)
 }
 \keyword{datasets}

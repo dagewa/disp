@@ -50,9 +50,9 @@ read(imageMatrix, noise = detector$readNoise, gain = detector$ADCgain)
 }
 
 \examples{
-	data(detector)
-	x <- dark()
-	x <- read(x)
+data(detector)
+x <- dark()
+x <- read(x)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

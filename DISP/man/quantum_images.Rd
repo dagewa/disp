@@ -80,11 +80,11 @@ pencil(lambda = 1e5, x = mean(detector$xDetRange), y = mean(detector$yDetRange))
 	\code{\link{expose}}
 }
 \examples{
-	data(detector)
-	a <- flood(100)
-	b <- spot(100)
-	c <- spotGrid(100)
-	d <- pencil(100)
+data(detector)
+a <- flood(100)
+b <- spot(100)
+c <- spotGrid(100)
+d <- pencil(100)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

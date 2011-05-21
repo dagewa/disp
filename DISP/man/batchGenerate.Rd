@@ -110,26 +110,26 @@ batchGenerate(start = 1, end = 10, directory = "./data/temp/",
 	\code{\link{writeImage}}.
 }
 \examples{
-	## Not run.
-	## WARNING: This may take a long time to compute, and requires the lists called detector and processing to be set up.
-	\dontrun{
-		data(detector)
-		data(processing)
-		batchGenerate(start = 1, end = 10, directory = "./data/temp/",
-		prefix = "spot",
-		spotLambda = 100,
-		spotx = mean(detector$xDetRange),
-		spoty = mean(detector$yDetRange),
-		spotsdx = 0.1, spotsdy = 0.1, spotrho = 0.3,
-		floodFlux = 10,
-		floodExtent = 1, # size to generate flood around spot
-		correct = TRUE,
-		saveRawRegionX = NULL,
-		saveRawRegionY = NULL,
-		saveCorrectedRegionX = NULL,
-		saveCorrectedRegionY = NULL,                                                    
-		messages = TRUE)
-	}
+## Not run.
+## WARNING: This may take a long time to compute, and requires the lists called detector and processing to be set up.
+\dontrun{
+data(detector)
+data(processing)
+batchGenerate(start = 1, end = 10, directory = "./data/temp/",
+prefix = "spot",
+spotLambda = 100,
+spotx = mean(detector$xDetRange),
+spoty = mean(detector$yDetRange),
+spotsdx = 0.1, spotsdy = 0.1, spotrho = 0.3,
+floodFlux = 10,
+floodExtent = 1, # size to generate flood around spot
+correct = TRUE,
+saveRawRegionX = NULL,
+saveRawRegionY = NULL,
+saveCorrectedRegionX = NULL,
+saveCorrectedRegionY = NULL,                                                    
+messages = TRUE)
+}
 }
 
 \keyword{file}

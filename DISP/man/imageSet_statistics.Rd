@@ -50,27 +50,27 @@ For \code{pxCor}, a 4 dimensional array where the first two dimensions specify t
 	\code{\link{\code{pxIntegrate}}}
 }
 \examples{
-	## Not run.
-	## WARNING: This may take a long time to compute, and requires the lists called detector and processing to be set up.
-	\dontrun{
-		data(detector)
-		data(processing)
-		corrIm01 <- correct(read(expose(spot())))
-		corrIm02 <- correct(read(expose(spot())))
-		corrIm03 <- correct(read(expose(spot())))
-		corrIm04 <- correct(read(expose(spot())))
-		corrIm05 <- correct(read(expose(spot())))
-		corrIm06 <- correct(read(expose(spot())))
-		corrIm07 <- correct(read(expose(spot())))
-		corrIm08 <- correct(read(expose(spot())))
-		corrIm09 <- correct(read(expose(spot())))
-		corrIm10 <- correct(read(expose(spot())))
-		ROIset <- makeImageSet("corrIm##", c(502,522), c(502,522))
-		meanROI <- pxMean(ROIset) #NB this mean includes the bias offset set in processing$bias
-		varROI <- pxVar(ROIset)
-		covArrayROI <- pxCov(ROIset)
-		corArrayROI <- pxCor(ROIset)
-	}
+## Not run.
+## WARNING: This may take a long time to compute, and requires the lists called detector and processing to be set up.
+\dontrun{
+data(detector)
+data(processing)
+corrIm01 <- correct(read(expose(spot())))
+corrIm02 <- correct(read(expose(spot())))
+corrIm03 <- correct(read(expose(spot())))
+corrIm04 <- correct(read(expose(spot())))
+corrIm05 <- correct(read(expose(spot())))
+corrIm06 <- correct(read(expose(spot())))
+corrIm07 <- correct(read(expose(spot())))
+corrIm08 <- correct(read(expose(spot())))
+corrIm09 <- correct(read(expose(spot())))
+corrIm10 <- correct(read(expose(spot())))
+ROIset <- makeImageSet("corrIm##", c(502,522), c(502,522))
+meanROI <- pxMean(ROIset) #NB this mean includes the bias offset set in processing$bias
+varROI <- pxVar(ROIset)
+covArrayROI <- pxCov(ROIset)
+corArrayROI <- pxCor(ROIset)
+}
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

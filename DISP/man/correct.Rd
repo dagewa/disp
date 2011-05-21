@@ -59,14 +59,14 @@ Apply image corrections to a raw image
 	\code{\link{undistortImage}}.
 }
 \examples{
-	## Not run.
-	## WARNING: This may take a long time to compute, and requires the lists called detector and processing to be set up.
-	\dontrun{
-		data(detector)
-		data(processing)
-		rawIm <- read(expose(spot()))
-		corrIm <- correct(rawIm)
-	}
+## Not run.
+## WARNING: This may take a long time to compute, and requires the lists called detector and processing to be set up.
+\dontrun{
+data(detector)
+data(processing)
+rawIm <- read(expose(spot()))
+corrIm <- correct(rawIm)
+}
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

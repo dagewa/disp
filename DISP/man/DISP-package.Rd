@@ -35,6 +35,6 @@ LazyLoad: \tab yes\cr
 \keyword{ package }
 
 \examples{
-	#image generation and spot integration is demonstrated in the help for the dataset spotSimulations
-	example(spotSimulations)
+#image generation and spot integration is demonstrated in the help for the dataset spotSimulations
+example(spotSimulations)
 }

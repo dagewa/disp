@@ -51,16 +51,16 @@
 	\code{\link{batchGenerate}}.
 }
 \examples{
-	## Not run.
-	## WARNING: This may take a long time to compute, and requires the lists called detector and processing to be set up.
-	\dontrun{
-		data(detector)
-		data(processing)
-		rawIm01 <- read(expose(spot()))
-		rawIm02 <- read(expose(spot()))
-		rawIm03 <- read(expose(spot()))
-		correctBatch("rawIm##", "corrIm")
-	}
+## Not run.
+## WARNING: This may take a long time to compute, and requires the lists called detector and processing to be set up.
+\dontrun{
+data(detector)
+data(processing)
+rawIm01 <- read(expose(spot()))
+rawIm02 <- read(expose(spot()))
+rawIm03 <- read(expose(spot()))
+correctBatch("rawIm##", "corrIm")
+}
 
 }
 

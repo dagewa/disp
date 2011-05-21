@@ -59,8 +59,8 @@ expose(Xph, block = 2e+05, ...)
 	
 }
 \examples{
-	data(detector)
-	electronImage <- expose(spot())
+data(detector)
+electronImage <- expose(spot())
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

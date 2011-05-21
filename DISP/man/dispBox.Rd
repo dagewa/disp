@@ -70,9 +70,9 @@
 }
 
 \examples{
-	data(detector)
-	rawIm <- read(expose(spot()))
-	dispBox(rawIm, NX=19, NY=19, NRX=5, NRY=5, NC=11, xPx=513, yPx=513)
+data(detector)
+rawIm <- read(expose(spot()))
+dispBox(rawIm, NX=19, NY=19, NRX=5, NRY=5, NC=11, xPx=513, yPx=513)
 }
 
 \keyword{ hplot }

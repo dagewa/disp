@@ -54,7 +54,7 @@ phosphor(input, PSF = detector$PSF, PHS = detector$PHS)
 	\code{\link{exposeFlood}}.
 }
 \examples{
-	x <- phosphor(spot(10))
+x <- phosphor(spot(10))
 }
 
 \keyword{datagen}

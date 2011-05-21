@@ -2,7 +2,7 @@
 \alias{makeFlatfield}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Normalises a uniform flood image to correct for the area distortion introduced by the FOT
+Normalise a uniform flood image to correct for the area distortion introduced by the FOT
 }
 \description{
 	This function would normally not be called directly by the user, but via a call to

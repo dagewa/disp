@@ -67,27 +67,27 @@ David G. Waterman.
 	\code{\link{makeFlatfield}}.
 }
 \examples{
-	## Not run.
-	## WARNING: This may take a long time to compute, and writes objects to disk.
-	\dontrun{
-		data(detector)
-	
-		# make 25 flood images with 1500 X-ray photons per pixel on average
-		flux <- 1500
-		for(i in 1:25){
-		  if (.Platform$OS.type == "windows") flush.console() 
-		  j <- sprintf("%03d",i)
-		  filenameRaw <- paste("floodRaw", j, sep="")	  
-		  print.noquote(paste("generating image", i))	  
-		  raw <- exposeFlood(flux)
-		  raw <- read(raw)
-		  assign(eval(filenameRaw), raw)
-		  writeImage(eval(as.name(filenameRaw)),filename=paste("./", filenameRaw, sep=""))
-		}
-				
-		processing <- makeProcessingList(c(56,969), c(56,969), "./floodRaw###", detector$type)
-		save(processing, file="processing.rda")
-	}
+## Not run.
+## WARNING: This may take a long time to compute, and writes objects to disk.
+\dontrun{
+data(detector)
+
+# make 25 flood images with 1500 X-ray photons per pixel on average
+flux <- 1500
+for(i in 1:25){
+  if (.Platform$OS.type == "windows") flush.console() 
+  j <- sprintf("%03d",i)
+  filenameRaw <- paste("floodRaw", j, sep="")	  
+  print.noquote(paste("generating image", i))	  
+  raw <- exposeFlood(flux)
+  raw <- read(raw)
+  assign(eval(filenameRaw), raw)
+  writeImage(eval(as.name(filenameRaw)),filename=paste("./", filenameRaw, sep=""))
+}
+		
+processing <- makeProcessingList(c(56,969), c(56,969), "./floodRaw###", detector$type)
+save(processing, file="processing.rda")
+}
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
