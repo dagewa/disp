@@ -9,7 +9,8 @@ Takes a set of images and integration parameters and calculates a spot profile b
 the set. Note this is not a robust profile forming algorithm like that of Mosflm!
 }
 \usage{
-makeProfile(imageSet, NX, NY, NRX, NRY, NC, xPx = ceiling(NX/2), yPx = ceiling(NY/2), bias = processing$newBias)
+makeProfile(imageSet, NX, NY, NRX, NRY, NC, xPx = ceiling(NX/2),
+	yPx = ceiling(NY/2), bias = processing$newBias)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

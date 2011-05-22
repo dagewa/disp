@@ -8,7 +8,8 @@ Non-uniformity correction
 Performs non-uniformity correction on a raw image using the known flat field response.
 }
 \usage{
-normaliseImage(imageMatrix, dark = processing$darkRaw, normaliser = processing$flatfield)
+normaliseImage(imageMatrix, dark = processing$darkRaw,
+	normaliser = processing$flatfield)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

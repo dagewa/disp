@@ -12,9 +12,10 @@ fitting, pixel correlations can be accounted for by including off-diagonal eleme
 variance-covariance array \code{Mobs}.
 }
 \usage{
-pxIntegrate(imageMatrix, type = "mosflm", NX, NY, NRX, NRY, NC, xPx = ceiling(NX/2), yPx = ceiling(NY/2),
-bias = processing$newBias, gain = NULL, profile = NULL, corArray = NULL, VOMimage = NULL, covArray = NULL,
-Mobs = NULL, makeProfile = FALSE, messages = TRUE)
+pxIntegrate(imageMatrix, type = "mosflm", NX, NY, NRX, NRY, NC,
+	xPx = ceiling(NX/2), yPx = ceiling(NY/2), bias = processing$newBias,
+	gain = NULL, profile = NULL, corArray = NULL, VOMimage = NULL,
+	covArray = NULL, Mobs = NULL, makeProfile = FALSE, messages = TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

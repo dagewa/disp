@@ -9,7 +9,8 @@
 	and optionally displays the measurement box.
 }
 \usage{
-	findSpot(imageMatrix, startX = NULL, startY = NULL, searchBoxSize = 20, movAvLength = 15, display = TRUE, messages=TRUE)
+findSpot(imageMatrix, startX = NULL, startY = NULL, searchBoxSize = 20,
+	movAvLength = 15, display = TRUE, messages=TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

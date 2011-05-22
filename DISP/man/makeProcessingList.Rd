@@ -9,7 +9,8 @@ Perform steps required to fill the processing list
 	image corrections, which is normally stored in a list called \code{processing}.
 }
 \usage{
-makeProcessingList(xRange = NULL, yRange = NULL, floodRawFilePattern = NULL, typeString = "edit as appropriate")
+makeProcessingList(xRange = NULL, yRange = NULL,
+	floodRawFilePattern = NULL, typeString = "edit as appropriate")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

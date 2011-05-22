@@ -9,7 +9,8 @@ Create thermal electron image
 	consisting of counts of thermally generated electrons at each pixel position.
 }
 \usage{
-	dark(accumulationTime = detector$darkAccumulationTime, darkRate = detector$darkRate)
+dark(accumulationTime = detector$darkAccumulationTime,
+	darkRate = detector$darkRate)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

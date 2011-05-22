@@ -12,9 +12,12 @@ Create a quantum image of X-ray photons
 }
 \usage{
 flood(lambda = 10000, xSize = detector$xDetRange, ySize = detector$yDetRange)
-spot(lambda = 1e5, x = mean(detector$xDetRange), y = mean(detector$yDetRange), sdx = 0.1, sdy = 0.1, rho = 0.3)
-spotGrid(lambda = 1000, xSize = detector$xDetRange, ySize = detector$yDetRange, x_spacing = 2, y_spacing = 2, sdx = 0.2, sdy = 0.15, rho = 0.3)
-pencil(lambda = 1e5, x = mean(detector$xDetRange), y = mean(detector$yDetRange))
+spot(lambda = 1e5, x = mean(detector$xDetRange), y = mean(detector$yDetRange),
+	sdx = 0.1, sdy = 0.1, rho = 0.3)
+spotGrid(lambda = 1000, xSize = detector$xDetRange, ySize = detector$yDetRange,
+	x_spacing = 2, y_spacing = 2, sdx = 0.2, sdy = 0.15, rho = 0.3)
+pencil(lambda = 1e5, x = mean(detector$xDetRange),
+	y = mean(detector$yDetRange))
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

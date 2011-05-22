@@ -10,7 +10,8 @@
 	in the same way as pxIntegrate.
 }
 \usage{
-	findSpotCentroid(imageMatrix, NX, NY, NRX, NRY, NC, xPx, yPx, messages = TRUE)
+findSpotCentroid(imageMatrix, NX, NY, NRX, NRY, NC, xPx, yPx,
+	messages = TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

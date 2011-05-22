@@ -9,7 +9,9 @@ Form various pixel grids to show their overlap and help to understand how this c
 then be displayed with poly plot methods. 
 }
 \usage{
-makePolyGrids(normaliseArray = TRUE, detectorFace = TRUE, CCD = TRUE, xRange = detector$xDetRange, yRange = detector$yDetRange)
+makePolyGrids(normaliseArray = TRUE, detectorFace = TRUE,
+	CCD = TRUE, xRange = detector$xDetRange,
+	yRange = detector$yDetRange)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

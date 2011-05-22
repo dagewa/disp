@@ -9,7 +9,8 @@
 	parameters highlighted.
 }
 \usage{
-	dispBox(imageMatrix, NX, NY, NRX, NRY, NC, xPx = ceiling(NX/2), yPx = ceiling(NY/2))
+dispBox(imageMatrix, NX, NY, NRX, NRY, NC, xPx = ceiling(NX/2),
+	yPx = ceiling(NY/2))
 }
 %- maybe also 'usage' for other objects documented here.
 

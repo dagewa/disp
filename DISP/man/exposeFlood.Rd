@@ -9,7 +9,9 @@
 	at the detector face to a pixellated image of electrons stored on the CCD.
 }
 \usage{
-	exposeFlood(flux = 20000, block = 5e+05, tempName = "exposeFloodTemp", xRange = detector$xDetRange, yRange = detector$yDetRange, partialImage = NULL)
+exposeFlood(flux = 20000, block = 5e+05, tempName = "exposeFloodTemp",
+	xRange = detector$xDetRange, yRange = detector$yDetRange,
+	partialImage = NULL)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

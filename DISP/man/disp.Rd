@@ -9,7 +9,8 @@
 	indicating greater X-ray intensity.
 }
 \usage{
-disp(imageMatrix, white = NULL, black = NULL, units = "pixels", origin = c(1,1), box = TRUE, asp=1, raster = "auto")
+disp(imageMatrix, white = NULL, black = NULL, units = "pixels",
+	origin = c(1,1), box = TRUE, asp=1, raster = "auto")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

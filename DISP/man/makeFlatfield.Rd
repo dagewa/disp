@@ -16,7 +16,8 @@ Normalise a uniform flood image to correct for the area distortion introduced by
 	correcting them for the image density variation introduced by the fibre optic taper.
 }
 \usage{
-makeFlatfield(xRange, yRange, imageSet, norm = processing$normaliseArray, dark = processing$darkRaw)
+makeFlatfield(xRange, yRange, imageSet, norm = processing$normaliseArray,
+	dark = processing$darkRaw)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

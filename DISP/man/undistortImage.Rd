@@ -8,7 +8,8 @@
 	Takes a matrix image and the tables for pixel reapportioning and performs distortion correction
 }
 \usage{
-	undistortImage(imageMatrix, undistortArray = processing$undistortArray, bits = detector$ADCbits)
+undistortImage(imageMatrix, undistortArray = processing$undistortArray,
+	bits = detector$ADCbits)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

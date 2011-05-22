@@ -10,19 +10,19 @@ Control generation of large numbers of replicate images
 }
 \usage{
 batchGenerate(start = 1, end = 10, directory = "./data/temp/",
-                          prefix = "spot",
-                          spotLambda = NULL,
-                          spotx = mean(detector$xDetRange),
-                          spoty = mean(detector$yDetRange),
-                          spotsdx = 0.1, spotsdy = 0.1, spotrho = 0.3,
-                          floodFlux = NULL,
-                          floodExtent = NULL, # size to generate flood around spot
-                          correct = FALSE,
-                          saveRawRegionX = NULL,
-                          saveRawRegionY = NULL,
-                          saveCorrectedRegionX = NULL,
-                          saveCorrectedRegionY = NULL,                                                    
-                          messages = TRUE)
+	prefix = "spot",
+	spotLambda = NULL,
+	spotx = mean(detector$xDetRange),
+	spoty = mean(detector$yDetRange),
+	spotsdx = 0.1, spotsdy = 0.1, spotrho = 0.3,
+	floodFlux = NULL,
+	floodExtent = NULL, # size to generate flood around spot
+	correct = FALSE,
+	saveRawRegionX = NULL,
+	saveRawRegionY = NULL,
+	saveCorrectedRegionX = NULL,
+	saveCorrectedRegionY = NULL,                                                    
+	messages = TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

@@ -9,7 +9,8 @@ Plot pixel values along a line drawn between two points on an image, and optiona
 width at x% of the maximum value.
 }
 \usage{
-linePlot(imageMatrix, px1 = NULL, px2 = NULL, fwxm = NULL, add = FALSE, newCol = "blue", ...)
+linePlot(imageMatrix, px1 = NULL, px2 = NULL, fwxm = NULL,
+	add = FALSE, newCol = "blue", ...)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
