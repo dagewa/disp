@@ -36,9 +36,6 @@
 \author{
 	David G. Waterman.
 }
-\note{
-%%  ~~further notes~~
-}
 
 \section{Warning}{
 	This function may be used to pollute the R environment with many objects. It is better to use a function
@@ -52,7 +49,8 @@
 }
 \examples{
 ## Not run.
-## WARNING: This may take a long time to compute, and requires the lists called detector and processing to be set up.
+## WARNING: This may take a long time to compute, and requires the lists
+## called detector and processing to be set up.
 \dontrun{
 data(detector)
 data(processing)

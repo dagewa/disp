@@ -44,11 +44,6 @@ makeImageSet(string, xRange = NULL, yRange = NULL, type = "ASCII")
 \author{
 	David G. Waterman.
 }
-\note{
-%%  ~~further notes~~
-}
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 	\code{\link{getFilePattern}} for details of the string pattern matching,

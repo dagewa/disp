@@ -41,16 +41,15 @@ observed values for the complete detector system.
 \author{
 	David G. Waterman.
 }
-\note{
-%%  ~~further notes~~
-}
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
+	\code{\link{detector}},
+	\code{\link{expose}},
+	\code{\link{exposeSpots}},
+	\code{\link{exposeFlood}}.
 }
 \examples{
+data(detector)
 x <- taper(phosphor(spot(10)))
 }
 

@@ -64,26 +64,22 @@
 \author{
 	David G. Waterman.
 }
-\note{
-%%  ~~further notes~~
-}
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 	\code{\link{dispBox}},
 	\code{\link{pxIntegrate}}.
 }
 \examples{
-	## Not run.
-	## WARNING: This may take a long time to compute, and requires the lists called detector and processing to be set up.
-	\dontrun{
-		data(detector)
-		data(processing)
-		rawIm <- read(expose(spot()))
-		corrIm <- correct(rawIm)
-		findSpot(corrIm, 500, 500)
-	}	
+## Not run.
+## WARNING: This may take a long time to compute, and requires the lists
+## called detector and processing to be set up.
+\dontrun{
+data(detector)
+data(processing)
+rawIm <- read(expose(spot()))
+corrIm <- correct(rawIm)
+findSpot(corrIm, 500, 500)
+}	
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

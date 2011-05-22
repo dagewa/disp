@@ -37,9 +37,7 @@ addBox(NX, NY, NRX, NRY, NC, xPx = ceiling(NX/2), yPx = ceiling(NY/2))
 	integer giving the pixel coordinate of the centre of the measurement box in the Y direction.
 }
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
+
 \value{
 	Returns NULL. Used for the side-effect of decorating a plot with a measurement box.
 }
@@ -49,11 +47,6 @@ addBox(NX, NY, NRX, NRY, NC, xPx = ceiling(NX/2), yPx = ceiling(NY/2))
 \author{
 	David G. Waterman.
 }
-\note{
-%%  ~~further notes~~
-}
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 	\code{\link{disp}},

@@ -14,9 +14,7 @@ mem()
 size()
 }
 %- maybe also 'usage' for other objects documented here.
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
+
 \value{
 For \code{mem}, no value is returned, but a dotchart showing all objects using > 1MB of storage space in the Global Environment is plotted.
 For \code{size}, a named vector of storage sizes in MB for all objects in the Global Environment, in order of decreasing size, is returned and also printed.
@@ -27,11 +25,6 @@ For \code{size}, a named vector of storage sizes in MB for all objects in the Gl
 \author{
 David G. Waterman.
 }
-\note{
-%%  ~~further notes~~
-}
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \examples{
 #make some large objects

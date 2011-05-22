@@ -54,11 +54,6 @@ makeFlatfield(xRange, yRange, imageSet, norm = processing$normaliseArray, dark =
 \author{
 	David G. Waterman.
 }
-\note{
-%%  ~~further notes~~
-}
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 	\code{\link{processing}},

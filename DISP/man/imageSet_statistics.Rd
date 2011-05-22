@@ -46,12 +46,13 @@ For \code{pxCor}, a 4 dimensional array where the first two dimensions specify t
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-	\code{\link{\code{makeImageSet}}},
-	\code{\link{\code{pxIntegrate}}}
+	\code{\link{makeImageSet}},
+	\code{\link{pxIntegrate}}
 }
 \examples{
 ## Not run.
-## WARNING: This may take a long time to compute, and requires the lists called detector and processing to be set up.
+## WARNING: This may take a long time to compute, and requires the lists
+## called detector and processing to be set up.
 \dontrun{
 data(detector)
 data(processing)
@@ -66,7 +67,7 @@ corrIm08 <- correct(read(expose(spot())))
 corrIm09 <- correct(read(expose(spot())))
 corrIm10 <- correct(read(expose(spot())))
 ROIset <- makeImageSet("corrIm##", c(502,522), c(502,522))
-meanROI <- pxMean(ROIset) #NB this mean includes the bias offset set in processing$bias
+meanROI <- pxMean(ROIset) #NB this includes the offset set in processing$bias
 varROI <- pxVar(ROIset)
 covArrayROI <- pxCov(ROIset)
 corArrayROI <- pxCor(ROIset)

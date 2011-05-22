@@ -21,9 +21,7 @@ Creates the calibration table used for geometrical distortion correction
 makeUndistortArray()
 }
 %- maybe also 'usage' for other objects documented here.
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
+
 \value{
 	The calibration data is returned as a two-dimensional list, with one element per pixel of
 	the CCD chip. Each element consists of a list of two elements, \code{pixel}, a two-dimensional
@@ -38,11 +36,6 @@ makeUndistortArray()
 \author{
 	David G. Waterman.
 }
-\note{
-%%  ~~further notes~~
-}
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 	\code{\link{detector}},
@@ -51,7 +44,8 @@ makeUndistortArray()
 }
 \examples{
 ## Not run.
-## WARNING: This may take a long time to compute, and requires the list called detector to be set up.
+## WARNING: This may take a long time to compute, and requires the list
+## called detector to be set up.
 \dontrun{
 x <- makeUndistortArray()
 }

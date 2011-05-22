@@ -42,10 +42,6 @@
 }
 }
 
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
-
 \value{
 	Returns NULL. Used for the side-effect of plotting a region of interest of an image
 	with a measurement box.
@@ -56,12 +52,6 @@
 \author{
 	David G. Waterman.
 }
-
-\note{
-%%  ~~further notes~~
-}
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 	\code{\link{disp}},

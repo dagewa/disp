@@ -53,7 +53,8 @@
 }
 \examples{
 ## Not run.
-## WARNING: This may take a long time to compute, and requires the lists called detector and processing to be set up.
+## WARNING: This may take a long time to compute, and requires the lists called
+## detector and processing to be set up.
 \dontrun{
 data(detector)
 data(processing)

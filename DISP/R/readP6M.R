@@ -31,12 +31,12 @@ function(filename){
   stopifnot(identical(readBin(f, "integer", 1, size=1, signed = FALSE), as.integer(213))) #check the "binary flag character"
   
   #extract required information about the binary from the header
-  binarySize <- headertext[grepl("X-Binary-Size:", headertext, fixed=T)]
-  binarySize <- as.integer(sub(pattern="X-Binary-Size:", replacement="", binarySize, fixed=T))
-  nFast <- headertext[grepl("X-Binary-Size-Fastest-Dimension:", headertext, fixed=T)]
-  nFast <- as.integer(sub(pattern="X-Binary-Size-Fastest-Dimension:", replacement="", nFast, fixed=T))
-  nSlow <- headertext[grepl("X-Binary-Size-Second-Dimension:", headertext, fixed=T)]
-  nSlow <- as.integer(sub(pattern="X-Binary-Size-Second-Dimension:", replacement="", nSlow, fixed=T))
+  binarySize <- headertext[grepl("X-Binary-Size:", headertext, fixed=TRUE)]
+  binarySize <- as.integer(sub(pattern="X-Binary-Size:", replacement="", binarySize, fixed=TRUE))
+  nFast <- headertext[grepl("X-Binary-Size-Fastest-Dimension:", headertext, fixed=TRUE)]
+  nFast <- as.integer(sub(pattern="X-Binary-Size-Fastest-Dimension:", replacement="", nFast, fixed=TRUE))
+  nSlow <- headertext[grepl("X-Binary-Size-Second-Dimension:", headertext, fixed=TRUE)]
+  nSlow <- as.integer(sub(pattern="X-Binary-Size-Second-Dimension:", replacement="", nSlow, fixed=TRUE))
   
   #Read the binary data now
   binaryRaw <- readBin(f, what = "raw", n = binarySize, endian = "little") #get endianness from the header...
@@ -48,7 +48,8 @@ function(filename){
   
   #dyn.load(paste("readP6M_decompress", .Platform$dynlib.ext, sep=""))
   decomp <- function(binaryRaw, binarySize){
-    decompress <- .C("decompress", as.raw(binaryRaw), as.integer(binarySize), pixelArray = integer(binarySize), errCode = integer(1))
+    decompress <- .C("decompress", as.raw(binaryRaw), as.integer(binarySize), pixelArray = integer(binarySize),
+		errCode = integer(1), PACKAGE="DISP")
     if(decompress$errCode == 1) stop("unable to fit all pixel values in an integer vector")
     return(decompress$pixelArray)
   }

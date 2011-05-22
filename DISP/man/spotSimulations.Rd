@@ -69,22 +69,22 @@ varcovZoneBRaw <- flatten(dummy, dummy, varcovZoneBRaw)
 
 #perform integrations
 
-pxIntegrate(rawA, type="mosflm", NX=21, NY=21, NRX=4, NRY=5, NC=11, xPx=332, yPx=332,
-                        bias=500, profile=profZoneARaw)
-pxIntegrate(corrA, type="mosflm", NX=23, NY=23, NRX=5, NRY=4, NC=11, xPx=306, yPx=306, 
-                        bias=100, profile=profZoneACorrected)                        
-pxIntegrate(rawB, type = "mosflm",  NX=21, NY=21, NRX=4, NRY=5, NC=11, xPx=326, yPx=326,
-                        bias=500, profile=profZoneBRaw)
-pxIntegrate(corrB, type="mosflm", NX=23, NY=23, NRX=5, NRY=4, NC=11, xPx=300, yPx=300, 
-                        bias=100, profile=profZoneBCorrected)
+pxIntegrate(rawA, type="mosflm", NX=21, NY=21, NRX=4, NRY=5, NC=11, xPx=332,
+	yPx=332, bias=500, profile=profZoneARaw)
+pxIntegrate(corrA, type="mosflm", NX=23, NY=23, NRX=5, NRY=4, NC=11, xPx=306,
+	yPx=306, bias=100, profile=profZoneACorrected)                        
+pxIntegrate(rawB, type = "mosflm",  NX=21, NY=21, NRX=4, NRY=5, NC=11, xPx=326,
+	yPx=326, bias=500, profile=profZoneBRaw)
+pxIntegrate(corrB, type="mosflm", NX=23, NY=23, NRX=5, NRY=4, NC=11, xPx=300,
+	yPx=300, bias=100, profile=profZoneBCorrected)
 
-pxIntegrate(rawA, type="full", NX=21, NY=21, NRX=4, NRY=5, NC=11, xPx=332, yPx=332,
-                        bias=500, profile=profZoneARaw, Mobs=varcovZoneARaw)
-pxIntegrate(corrA, type="full", NX=23, NY=23, NRX=5, NRY=4, NC=11, xPx=306, yPx=306, 
-                        bias=100, profile=profZoneACorrected, Mobs=varcovZoneACor)
-pxIntegrate(rawB, type="full", NX=21, NY=21, NRX=4, NRY=5, NC=11, xPx=326, yPx=326,
-                        bias=500, profile=profZoneBRaw, Mobs = varcovZoneBRaw)
-pxIntegrate(corrB, type="full", NX=23, NY=23, NRX=5, NRY=4, NC=11, xPx=300, yPx=300, 
-                        bias=100, profile=profZoneBCorrected, Mobs=varcovZoneBCor)                        
+pxIntegrate(rawA, type="full", NX=21, NY=21, NRX=4, NRY=5, NC=11, xPx=332,
+	yPx=332, bias=500, profile=profZoneARaw, Mobs=varcovZoneARaw)
+pxIntegrate(corrA, type="full", NX=23, NY=23, NRX=5, NRY=4, NC=11, xPx=306,
+	yPx=306, bias=100, profile=profZoneACorrected, Mobs=varcovZoneACor)
+pxIntegrate(rawB, type="full", NX=21, NY=21, NRX=4, NRY=5, NC=11, xPx=326,
+	yPx=326, bias=500, profile=profZoneBRaw, Mobs = varcovZoneBRaw)
+pxIntegrate(corrB, type="full", NX=23, NY=23, NRX=5, NRY=4, NC=11, xPx=300,
+	yPx=300, bias=100, profile=profZoneBCorrected, Mobs=varcovZoneBCor)                        
 }
 \keyword{datasets}

@@ -120,15 +120,10 @@ A vector of five elements, the last three of which might be \code{NA} depending 
 \author{
 	David G. Waterman.
 }
-\note{
-%%  ~~further notes~~
-}
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 	\code{\link{makeProfile}},
-	\code{\link{makeVOMarray}},
+	\code{\link{makeVOMimage}},
 	\code{\link{pxCor}},
 	\code{\link{pxCov}},
 	\code{\link{flatten}},

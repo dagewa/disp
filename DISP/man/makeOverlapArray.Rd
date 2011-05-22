@@ -37,18 +37,14 @@ makeOverlapArray()
 \author{
 	David G. Waterman.
 }
-\note{
-%%  ~~further notes~~
-}
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 	\code{\link{detector}},
 	\code{\link{makeUndistortArray}}.
 }
 \examples{
-## WARNING: This may take a long time to compute, and requires the list called detector to be set up.
+## WARNING: This may take a long time to compute, and requires the list
+## called detector to be set up.
 \dontrun{x <- makeOverlapArray()}
 }
 

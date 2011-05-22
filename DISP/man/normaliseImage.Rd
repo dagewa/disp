@@ -40,11 +40,6 @@ A matrix of pixel values that have been dark-subtracted and normalised for non-u
 \author{
 	David G. Waterman.
 }
-\note{
-%%  ~~further notes~~
-}
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 	\code{\link{correct}},
@@ -53,7 +48,8 @@ A matrix of pixel values that have been dark-subtracted and normalised for non-u
 }
 \examples{
 ## Not run.
-## WARNING: This may take a long time to compute, and requires the lists called detector and processing to be set up.
+## WARNING: This may take a long time to compute, and requires the lists
+## called detector and processing to be set up.
 \dontrun{
 data(detector)
 data(processing)

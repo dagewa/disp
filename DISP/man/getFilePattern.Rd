@@ -40,19 +40,13 @@ getFilePattern(string)
 \author{
 	David G. Waterman.
 }
-\note{
-%%  ~~further notes~~
-}
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 	\code{\link{ls}},
 	\code{\link{dir}},
 	\code{\link{correctBatch}},
 	\code{\link{makeImageSet}},
-	\code{\link{readImageBatch}},
-	\code{\link{rmImageBatch}}.
+	\code{\link{readImageBatch}}.
 }
 \examples{
 getFilePattern("./path/to/imageFile_1_###.img")

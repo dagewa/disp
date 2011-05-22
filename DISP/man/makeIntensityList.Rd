@@ -38,9 +38,6 @@ of that usage.
 \author{
 	David G. Waterman.
 }
-\note{
-%%  ~~further notes~~
-}
 
 \section{Warning }{
 This function was developed for a single-use application and may not work correctly outside the scope
@@ -53,8 +50,8 @@ of that usage.
 }
 \examples{
 ## Not run.
-## WARNING: This function requires a data frame formed from reading a batch MTZ file into the environment, which
-## is not supplied with this package.
+## WARNING: This function requires a data frame formed from reading a batch
+## MTZ file into the environment, which is not supplied with this package.
 \dontrun{
 someMTZobject <- readMTZ("./someMTZfile.mtz")
 x <- makeIntensityList(someMTZobject)

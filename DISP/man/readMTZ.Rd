@@ -41,11 +41,6 @@ Data frame containing named columns and a list \code{mtzHeader} attached as an a
 \author{
 	David G. Waterman.
 }
-\note{
-	This function assumes 4 bytes per data item, which is usually the case.
-}
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 	\code{\link{makeIntensityList}}

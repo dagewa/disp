@@ -43,15 +43,7 @@ Returns NULL. Used for the side-effect of saving files to disk.
 \author{
 	David G. Waterman.
 }
-\note{
-%%  ~~further notes~~
-}
 
-%% ~Make other sections like Warning with \section{Warning }{....} ~
-
-\seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
-}
 \examples{
 ## Not run.
 ## WARNING: This function may take a long time to compute.

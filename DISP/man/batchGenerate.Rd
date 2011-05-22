@@ -95,11 +95,6 @@ batchGenerate(start = 1, end = 10, directory = "./data/temp/",
 \author{
 	David G. Waterman.
 }
-\note{
-%%  ~~further notes~~
-}
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 	\code{\link{spot}},
@@ -111,7 +106,8 @@ batchGenerate(start = 1, end = 10, directory = "./data/temp/",
 }
 \examples{
 ## Not run.
-## WARNING: This may take a long time to compute, and requires the lists called detector and processing to be set up.
+## WARNING: This may take a long time to compute, and requires the lists
+## called detector and processing to be set up.
 \dontrun{
 data(detector)
 data(processing)

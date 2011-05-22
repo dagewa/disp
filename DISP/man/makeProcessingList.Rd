@@ -53,11 +53,6 @@ makeProcessingList(xRange = NULL, yRange = NULL, floodRawFilePattern = NULL, typ
 \author{
 David G. Waterman.
 }
-\note{
-%%  ~~further notes~~
-}
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 	\code{\link{detector}},
@@ -82,10 +77,12 @@ for(i in 1:25){
   raw <- exposeFlood(flux)
   raw <- read(raw)
   assign(eval(filenameRaw), raw)
-  writeImage(eval(as.name(filenameRaw)),filename=paste("./", filenameRaw, sep=""))
+  writeImage(eval(as.name(filenameRaw)),
+	filename=paste("./", filenameRaw, sep=""))
 }
 		
-processing <- makeProcessingList(c(56,969), c(56,969), "./floodRaw###", detector$type)
+processing <- makeProcessingList(c(56,969), c(56,969),
+	"./floodRaw###", detector$type)
 save(processing, file="processing.rda")
 }
 }

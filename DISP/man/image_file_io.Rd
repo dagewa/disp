@@ -55,14 +55,9 @@ writeImage(imageMatrix, filename)
 \author{
 	David G. Waterman.
 }
-\note{
-	\code{readImageBatch} can't read text files with pixel values stored as "double".
-}
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-	\code{\link{\code{getFilePattern}}}
+	\code{\link{getFilePattern}}
 }
 \examples{
 #None right now

@@ -49,9 +49,6 @@ flatten(imageSlice, VOMimage, corArray)
 \author{
 	David G. Waterman.
 }
-\note{
-%%  ~~further notes~~
-}
 
 \section{Warning}{
 	For large regions of interest the variance-covariance matrix may become unmanageably large because it has \eqn{(NX*NY)^2} elements.

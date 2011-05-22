@@ -11,7 +11,7 @@ Create a quantum image of X-ray photons
 	Generates a list of X-ray photon positions for a either a random uniformly distributed flood field, a \sQuote{Bragg spot}, a grid of such spots, or a point source.
 }
 \usage{
-flood(lambda = 1e5, xSize = detector$xDetRange, ySize = detector$yDetRange)
+flood(lambda = 10000, xSize = detector$xDetRange, ySize = detector$yDetRange)
 spot(lambda = 1e5, x = mean(detector$xDetRange), y = mean(detector$yDetRange), sdx = 0.1, sdy = 0.1, rho = 0.3)
 spotGrid(lambda = 1000, xSize = detector$xDetRange, ySize = detector$yDetRange, x_spacing = 2, y_spacing = 2, sdx = 0.2, sdy = 0.15, rho = 0.3)
 pencil(lambda = 1e5, x = mean(detector$xDetRange), y = mean(detector$yDetRange))
@@ -68,11 +68,6 @@ pencil(lambda = 1e5, x = mean(detector$xDetRange), y = mean(detector$yDetRange))
 \author{
 	David G. Waterman.
 }
-\note{
-%%  ~~further notes~~
-}
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 	\code{\link{detector}},

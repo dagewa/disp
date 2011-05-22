@@ -41,11 +41,6 @@ phosphor(input, PSF = detector$PSF, PHS = detector$PHS)
 \author{
 	David G. Waterman.
 }
-\note{
-%%  ~~further notes~~
-}
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 	\code{\link{detector}},
@@ -54,6 +49,7 @@ phosphor(input, PSF = detector$PSF, PHS = detector$PHS)
 	\code{\link{exposeFlood}}.
 }
 \examples{
+data(detector)
 x <- phosphor(spot(10))
 }
 

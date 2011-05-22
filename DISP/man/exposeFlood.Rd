@@ -52,11 +52,6 @@
 \author{
 	David G. Waterman.
 }
-\note{
-%%  ~~further notes~~
-}
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 	\code{\link{detector}},
@@ -67,8 +62,8 @@
 }
 \examples{
 ## Not run.
-## WARNING: This function may take a long time to compute. It writes temporary results to disk
-## and requires the list called detector to be set up.
+## WARNING: This function may take a long time to compute. It writes temporary
+## results to disk and requires the list called detector to be set up.
 \dontrun{
 data(detector)
 electronImage <- exposeFlood(flux=10)

@@ -34,11 +34,6 @@ dispContour(imageMatrix, origin = c(1,1))
 \author{
 	David G. Waterman.
 }
-\note{
-%%  ~~further notes~~
-}
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 	\code{\link{disp}},

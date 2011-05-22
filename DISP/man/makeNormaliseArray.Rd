@@ -42,17 +42,15 @@ makeNormaliseArray()
 \author{
 	David G. Waterman.
 }
-\note{
-%%  ~~further notes~~
-}
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
+	\code{\link{detector}},
+	\code{\link{processing}},
+	\code{\link{makeProcessingList}}.
 }
 \examples{
-## WARNING: This may take a long time to compute, and requires the list called detector to be set up.
+## WARNING: This may take a long time to compute, and requires the list
+## called detector to be set up.
 \dontrun{x <- makeNormaliseArray()}
 }
 
