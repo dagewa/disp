@@ -5,12 +5,12 @@ function(string, envir = .GlobalEnv, type="ASCII"){
   ## keeping their filenames as the object names
   
   # choose type of image reading function
-  typeCase <- pmatch(type, c("ASCII", "Mar", "SMV", "P6M"))
+  typeCase <- pmatch(type, c("ASCII", "Mar", "SMV", "miniCBF"))
   if(is.na(typeCase)) stop("Bad parameter for type") # stop if doesn't match   
   if(typeCase == 1) readThisImage <- readImage
   if(typeCase == 2) readThisImage <- readMar
   if(typeCase == 3) readThisImage <- readSMV
-  if(typeCase == 4) readThisImage <- readP6M
+  if(typeCase == 4) readThisImage <- readCBF
   
   string <- getFilePattern(string)
   directory <- string[1]

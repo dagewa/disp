@@ -1,8 +1,8 @@
 Package: DISP
 Type: Package
 Title: CCD Area detector simulation and diffraction spot integration routines
-Version: 0.1-0
-Date: 2011-05-22
+Version: 0.1-2
+Date: 2011-06-25
 Author: David Waterman
 Maintainer: David Waterman <dgwaterman@gmail.com>
 Description: This package provides functions that simulate the operation of a CCD Area detector

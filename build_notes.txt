@@ -1,0 +1,12 @@
+Source tarball created with
+
+	R CMD build DISP
+
+on Ubuntu Virtual Box, running R 2.12.1
+
+
+Windows binary zip file created with
+
+	R CMD INSTALL --resave-data --build DISP
+
+in a command prompt under Windows 7 with R 2.13.0. Both 32 and 64 bit versions of compiled code are included.

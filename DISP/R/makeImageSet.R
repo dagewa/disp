@@ -37,7 +37,7 @@ function(string, xRange = NULL, yRange = NULL, type = "ASCII"){
   print.noquote(paste("makeImageSet:",nImages,"objects are matched by the pattern and will be combined into a set"))
   
   # set read function for either filesystem or from memory
-  typeCase <- pmatch(type, c("ASCII", "Mar", "SMV", "P6M"))
+  typeCase <- pmatch(type, c("ASCII", "Mar", "SMV", "miniCBF"))
   if(is.na(typeCase)) stop("Bad parameter for type") # stop if doesn't match
   
   readThisImage <- if(fileSystem && typeCase == 1){ #as ASCII files
@@ -47,7 +47,7 @@ function(string, xRange = NULL, yRange = NULL, type = "ASCII"){
   }else if(fileSystem && typeCase ==3){ #as SMV files
     function(imageName, directory) readSMV(paste(directory, imageName, sep=""))
   }else if(fileSystem && typeCase ==4){ #as Pilatus mini CBF files
-    function(imageName, directory) readP6M(paste(directory, imageName, sep=""))    
+    function(imageName, directory) readCBF(paste(directory, imageName, sep=""))    
   }else{ #from the search patch
     function(imageName, directory) eval(as.name(imageName))
   }

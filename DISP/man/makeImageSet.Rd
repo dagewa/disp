@@ -25,7 +25,7 @@ makeImageSet(string, xRange = NULL, yRange = NULL, type = "ASCII")
 }
   \item{type}{
 	String specifying the format of images to be read from disk, currently either \dQuote{ASCII}, \dQuote{Mar},
-	\dQuote{SMV}, or \dQuote{P6M}.
+	\dQuote{SMV}, or \dQuote{miniCBF}.
 }
 }
 \details{
