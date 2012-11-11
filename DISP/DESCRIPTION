@@ -1,13 +1,13 @@
 Package: DISP
 Type: Package
 Title: CCD Area detector simulation and diffraction spot integration routines
-Version: 0.1-2
-Date: 2011-06-25
+Version: 0.1-3
+Date: 2012-11-11
 Author: David Waterman
 Maintainer: David Waterman <dgwaterman@gmail.com>
 Description: This package provides functions that simulate the operation of a CCD Area detector
-	of the type used for Macromolecular Crystallography. In addition, functions allowing
-	integration and statistical analysis of diffraction spot images are included.
+    of the type used for Macromolecular Crystallography. In addition, functions allowing
+    integration and statistical analysis of diffraction spot images are included.
 License: GPL-2
 Depends: R (>= 2.11.1), gpclib
 Suggests: mvtnorm
