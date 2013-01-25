@@ -57,7 +57,7 @@ function(imageMatrix, filename, binLenMultiplier = 4, xPxSize=NULL,yPxSize=NULL,
   #open file for writing - do this before the call to normalizePath below
   f <- file(filename, open="wb") 
   
-  header <- paste("###CBF: VERSION 1.5, written by DISP v",packageDescription("DISP", fields = "Version"),"\r\n",
+  header <- paste("###CBF:                this is not a SLS/DECTRIS PILATUS detector, it was written by DISP v",packageDescription("DISP", fields = "Version"),"\r\n",
 	"\r\n",
 	"data_DISP_imageMatrix\r\n",
 	"\r\n",
